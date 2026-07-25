@@ -1,0 +1,64 @@
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="topCircle" d="M 60,300 A 240,240 0 0 1 540,300" />
+    <path id="bottomCircle" d="M 60,300 A 240,240 0 0 0 540,300" />
+  </defs>
+
+  <!-- Outer ring -->
+  <circle cx="300" cy="300" r="280" fill="none" stroke="#000000" stroke-width="6"/>
+  <!-- Inner ring -->
+  <circle cx="300" cy="300" r="210" fill="none" stroke="#000000" stroke-width="4"/>
+
+  <!-- Top text: Vereinsname -->
+  <text font-family="Georgia, 'Times New Roman', serif" font-size="20" letter-spacing="3" fill="#000000">
+    <textPath href="#topCircle" startOffset="50%" text-anchor="middle">
+      GEMEINSCHAFTS-CLUB
+    </textPath>
+  </text>
+
+  <!-- Bottom text: Ort -->
+  <text font-family="Georgia, 'Times New Roman', serif" font-size="20" letter-spacing="3.5" fill="#000000">
+    <textPath href="#bottomCircle" startOffset="50%" text-anchor="middle">
+      FÜR KULTUR UND KETSCH
+    </textPath>
+  </text>
+
+  <!-- Divider dots between top and bottom text -->
+  <circle cx="60" cy="300" r="4" fill="#000000"/>
+  <circle cx="540" cy="300" r="4" fill="#000000"/>
+
+  <!-- Center emblem -->
+  <g transform="translate(300,300)">
+    <circle cx="0" cy="0" r="192" fill="none" stroke="#000000" stroke-width="3"/>
+
+    <!-- Easter-egg icon: solid BBQ grill on crate, redesigned to avoid dome silhouette -->
+    <g transform="translate(0,-85)">
+      <!-- grill bowl: shallow rounded basin, clearly a BBQ kettle not a dome -->
+      <path d="M -48,-6 Q -48,20 0,22 Q 48,20 48,-6 L 40,-6 Q 40,10 0,12 Q -40,10 -40,-6 Z" fill="#000000"/>
+      <!-- horizontal grate lines across the grill top (reads as bars, not minaret stripes) -->
+      <rect x="-40" y="-14" width="80" height="5" rx="2" fill="#000000"/>
+      <rect x="-40" y="-3" width="80" height="4" fill="#FFFFFF"/>
+
+      <!-- three splayed legs, reaching down to the crate -->
+      <line x1="-30" y1="18" x2="-46" y2="55" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+      <line x1="0" y1="22" x2="0" y2="55" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+      <line x1="30" y1="18" x2="46" y2="55" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+
+    </g>
+
+    <!-- crate beneath the grill -->
+    <g transform="translate(0,-30)">
+      <rect x="-56" y="0" width="112" height="50" rx="4" fill="#000000"/>
+      <rect x="-50.4" y="7" width="100.8" height="5" fill="#FFFFFF"/>
+      <rect x="-21.4" y="7" width="5.6" height="40" fill="#FFFFFF"/>
+      <rect x="15.8" y="7" width="5.6" height="40" fill="#FFFFFF"/>
+    </g>
+
+    <text x="0" y="72" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-weight="bold"
+          text-anchor="middle" fill="#000000">GCKK</text>
+    <!-- small decorative rule under monogram -->
+    <line x1="-78" y1="89" x2="78" y2="89" stroke="#000000" stroke-width="2.5"/>
+    <text x="0" y="117" font-family="Georgia, 'Times New Roman', serif" font-size="18" letter-spacing="2"
+          text-anchor="middle" fill="#000000">E.V.</text>
+  </g>
+</svg>

@@ -49,17 +49,9 @@ header.site-header .container {
   color: var(--text);
 }
 
-.badge {
+.badge-logo {
   width: 52px;
   height: 52px;
-  border-radius: 50%;
-  border: 2px solid var(--accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 0.95rem;
-  letter-spacing: 0.03em;
   flex-shrink: 0;
 }
 
